@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | TechSphere Hub Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <!-- About page content here -->
+   <!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>About TechSphere Hub Academy</h1>
+    <p>Building the future of digital and technology education.</p>
+  </div>
+</section>
+
+<!-- Mission Section -->
+<section class="section fade-in">
+  <div class="container">
+    <h2 class="section-title">Our Mission</h2>
+    <p class="section-text">Empowering individuals with the skills and knowledge necessary to thrive in the rapidly evolving fields of technology and digital innovation.</p>
+  </div>
+</section>
+
+<!-- Vision Section -->
+<section class="section fade-in">
+  <div class="container">
+    <h2 class="section-title">Our Vision</h2>
+    <p class="section-text">To be a leading institution recognized globally for excellence in digital and technology education, pioneering new methodologies and approaches to prepare students for the challenges of tomorrow.</p>
+  </div>
+</section>
+
+<!-- Founders Heading -->
+<section class="section fade-in meet-founders">
+  <div class="container">
+    <h2 class="section-title">Meet Our Founders</h2>
+  </div>
+</section>
+
+<!-- Founders Profiles -->
+<section class="founders">
+  <div class="container founder-profile fade-in" style="transition-delay: 0.2s;">
+    <div class="founder-image">
+      <img src="https://i.ibb.co/r2PkPFM9/Potrait.jpg" alt="Ayomikun Adebawojo">
+    </div>
+    <div class="founder-text">
+      <h3>Ayomikun Adebawojo</h3>
+      <p>Ayomikun Adebawojo is the Co-founder of TechSphere Hub and a passionate data enthusiast dedicated to shaping the next generation of data analysts. With over five years of hands-on experience, he works as a Power BI Developer, specializing in transforming complex datasets into actionable insights that drive business success.</p>
+      <p>Holding a background in Economics and credentials as a Chartered Accountant, Ayomikun blends financial expertise with advanced analytics, delivering high-quality solutions and fostering impactful learning experiences.</p>
+    </div>
+  </div>
+
+  <div class="container founder-profile fade-in" style="transition-delay: 0.5s;">
+    <div class="founder-image">
+      <img src="https://i.ibb.co/yncMN70Q/Tobi-Picture.jpg" alt="Oluwatobi Adeolu Adetunji">
+    </div>
+    <div class="founder-text">
+      <h3>Oluwatobi Adeolu Adetunji</h3>
+      <p>Oluwatobi Adeolu Adetunji is a versatile Marketing Data Analyst with over five years of experience in leveraging data to drive business growth and optimize operations. Formerly a Digital Marketing Manager, Tobi expertly combines marketing knowledge with data analytics across diverse industries.</p>
+      <p>Currently at SiNet Technologies, he uses tools like Excel, SQL, Tableau, and Power BI to elevate marketing strategies. As Co-founder of TechSphere Hub, Tobi is passionate about building a vibrant community of tech professionals and fostering collaboration in the tech ecosystem.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Back Button -->
+<section class="section">
+  <div class="container" style="text-align: center;">
+    <a href="index.html" class="btn-primary">Back to Home</a>
+  </div>
+</section>
+
+<!-- Fade In Animation Script -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.fade-in').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+</body>
+</html>

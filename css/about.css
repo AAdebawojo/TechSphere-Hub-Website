@@ -1,0 +1,154 @@
+/* about.css */
+:root {
+    --primary-color: #2f6690;
+    --secondary-color: #3a7ca5;
+    --background-color: #d9dcd6;
+    --text-color: #16425b;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: var(--primary-color);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .section-text {
+    font-size: 1.1rem;
+    color: #374151;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Special adjustment for Meet Our Founders */
+  .meet-founders {
+    padding-bottom: 0;
+  }
+  
+  /* Founders */
+  .founders {
+    padding: 40px 0;
+  }
+  
+  .founder-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .founder-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .founder-text {
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .founder-text h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .founder-text p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #374151;
+  }
+  
+  /* Button */
+  .btn-primary {
+    background: var(--secondary-color);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background: var(--primary-color);
+  }
+  
+  /* Fade-in Animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .founder-profile {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .founder-text {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+    }
+  }
+  
