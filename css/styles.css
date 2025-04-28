@@ -454,7 +454,7 @@
     }
   }
 
-    /* Responsive Header Fix */
+  /* Responsive Header Fix */
   @media (max-width: 768px) {
     .header {
       flex-direction: column;
@@ -467,8 +467,6 @@
     }
   
     .btn-primary {
-      max-width: 250px;
-      width: 100%;
-      text-align: center;
+      margin: 0;
     }
   }
