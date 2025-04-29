@@ -233,6 +233,12 @@
     color: #b91c1c;
   }
   
+  .course-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the link behave like a block */
+  }
+
   .about {
     padding: 60px 0;
   }
