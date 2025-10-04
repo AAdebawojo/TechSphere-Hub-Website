@@ -303,6 +303,22 @@ nav ul li a:hover {
 
 .copyright {
   text-align: center;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.copyright a {
+  color: #d1d5db; /* TechSphere blue tone */
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
   margin-top: 20px;
   font-size: 14px;
 }
