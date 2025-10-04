@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms &amp; Conditions | TechSphere Hub Academy</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Reuse terms.css (keeps header/menu & section styles consistent) -->
+  <link rel="stylesheet" href="css/terms.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Terms &amp; Conditions</h1>
+      <p>Effective Date: 1st October 2025</p>
+      <p class="small">These Terms and Conditions govern your use of our website and services.</p>
+    </div>
+  </section>
+
+  <!-- Terms content -->
+  <main class="section fade-in">
+    <div class="container">
+      <ul class="terms-list">
+        <li>
+          <h2>1. Acceptance of Terms</h2>
+          <p>By accessing <strong>www.techspherehub.co.uk</strong>, you agree to these Terms and Conditions. If you do not agree, please do not use the site.</p>
+        </li>
+
+        <li>
+          <h2>2. Our Services</h2>
+          <p>We provide online and offline educational and digital training services. Full details of our offerings are available on the website.</p>
+        </li>
+
+        <li>
+          <h2>3. User Responsibilities</h2>
+          <p>By using our website, you agree:</p>
+          <ul>
+            <li>To provide accurate and honest information.</li>
+            <li>Not to use the site for unlawful purposes.</li>
+            <li>Not to attempt to interfere with the security of our services.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h2>4. Payments</h2>
+          <p>While we do not collect payments directly on the site, service fees are payable via secure third-party links (e.g. Paystack) sent after form submission. All transactions are subject to the third-party’s terms and conditions.</p>
+        </li>
+
+        <li>
+          <h2>5. Intellectual Property</h2>
+          <p>All content on this site, including text, graphics, branding, and course materials, are owned by or licensed to Techsphere Hub Academy and protected by copyright laws. You may not copy, reproduce, or distribute our content without written permission.</p>
+        </li>
+
+        <li>
+          <h2>6. Limitation of Liability</h2>
+          <p>We do our best to ensure that our services and content are accurate and reliable, but we make no guarantees and will not be liable for any:</p>
+          <ul>
+            <li>Indirect, incidental, or consequential damages</li>
+            <li>Service interruptions or technical failures</li>
+            <li>Losses due to user error or misuse</li>
+          </ul>
+        </li>
+
+        <li>
+          <h2>7. Third-Party Links</h2>
+          <p>Our website may contain links to third-party websites or services. We are not responsible for the content, privacy, or security of those third-party sites.</p>
+        </li>
+
+        <li>
+          <h2>8. Termination</h2>
+          <p>We reserve the right to suspend or terminate access to our website or services for any user who violates these terms.</p>
+        </li>
+
+        <li>
+          <h2>9. Changes to Terms</h2>
+          <p>We may update these Terms from time to time. It is your responsibility to check this page for updates. Continued use of the site after changes constitutes your acceptance.</p>
+        </li>
+
+        <li>
+          <h2>10. Governing Law</h2>
+          <p>These Terms are governed by the laws of Nigeria, and where applicable, by international data protection laws such as the UK GDPR.</p>
+        </li>
+
+        <li>
+          <h2>11. Contact Information</h2>
+          <p>If you have questions about these Terms, please contact us at: <a href="mailto:info@techspherehub.onmicrosoft.com">info@techspherehub.onmicrosoft.com</a></p>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Back Button -->
+<section class="section">
+  <div class="container" style="text-align: center;">
+    <a href="index.html" class="btn-primary">Back to Home</a>
+  </div>
+</section>
+
+<!-- Scripts -->
+<script>
+  // Fade-in animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(section => {
+    observer.observe(section);
+  });
+
+  // Toggle mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
