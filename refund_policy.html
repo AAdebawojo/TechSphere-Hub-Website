@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refund Policy | TechSphere Hub Academy</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Page-specific CSS -->
+  <link rel="stylesheet" href="css/refund_policy.css">
+  <!-- Font Awesome for Hamburger -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Refund Policy</h1>
+    <p>Effective Date: 1st October 2025</p>
+  </div>
+</section>
+
+<!-- Policy Content -->
+<section class="section fade-in">
+  <div class="container">
+    <p>This Refund Policy governs refund requests for all online courses, digital resources, registrations, and certifications offered by TechSphere Hub Academy (“we,” “our,” or “us”).</p>
+
+    <h2>1. Scope</h2>
+    <p>This policy applies to payments made for our online courses, learning materials, and certifications. Certificates include both the TechSphere Hub Certificate of Completion and, for applicable programs, the Microsoft Power BI Data Analyst Certification (PL-300).</p>
+
+    <h2>2. Full Refund – Before Course Start</h2>
+    <p>Participants are entitled to a full refund if they request cancellation before the official course start date. Requests must be made in writing via email.</p>
+
+    <h2>3. Partial Refund – Within One Month After Start</h2>
+    <p>If a refund request is made within one (1) month of the course start date, seventy-five percent (75%) of the total course fee will be refunded. No refunds will be processed after this period.</p>
+
+    <h2>4. Non-Refundable Situations</h2>
+    <p>There are no fixed non-refundable registration or material fees. However, refunds may be denied if a participant has accessed substantial digital course content or received a certificate of completion.</p>
+
+    <h2>5. Payment Platforms and Processing</h2>
+    <p>Refunds are processed through our approved payment platforms, <strong>Paystack</strong> or <strong>Moniepoint</strong>, and will be credited to the original payment method within three to five (3–5) business days after approval. We are not liable for delays caused by banks or payment processors.</p>
+
+    <h2>6. How to Request a Refund</h2>
+    <p>To request a refund, please send an email to <a href="mailto:info@techspherehub.onmicrosoft.com">info@techspherehub.onmicrosoft.com</a> including:</p>
+    <ul>
+      <li>Your full name</li>
+      <li>Course or program title</li>
+      <li>Payment reference number</li>
+      <li>Reason for the refund request</li>
+    </ul>
+    <p>We will acknowledge and review refund requests within five (5) business days.</p>
+
+    <h2>7. Adjustments and Deductions</h2>
+    <p>Where required, administrative adjustments may be deducted from the refund amount. Such deductions will be detailed in the refund confirmation email.</p>
+
+    <h2>8. No Waiver of Rights</h2>
+    <p>Refund approval does not waive any of TechSphere Hub Academy’s rights under its Terms and Conditions or applicable law.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We reserve the right to amend this Refund Policy at any time. Updates will be posted on our website, and continued use of our services constitutes acceptance of the revised terms.</p>
+
+    <h2>10. Governing Law</h2>
+    <p>This policy is governed by the laws of Nigeria and, where applicable, international standards such as the UK GDPR.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>For all refund inquiries, please contact:<br>
+    <strong>Email:</strong> <a href="mailto:info@techspherehub.onmicrosoft.com">info@techspherehub.onmicrosoft.com</a><br>
+    <strong>Phone Number:</strong> +2348162170223</a><br>
+    <strong>Business Address:</strong> TechSphere Hub Academy, 3, Oluwakemi Street, Ojodu Berger, Ikeja, Lagos, Nigeria.</p>
+  </div>
+</section>
+
+<!-- Back Button -->
+<section class="section">
+  <div class="container" style="text-align: center;">
+    <a href="index.html" class="btn-primary">Back to Home</a>
+  </div>
+</section>
+
+<!-- Scripts -->
+<script>
+  // Fade-in animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(section => {
+    observer.observe(section);
+  });
+
+  // Toggle mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
