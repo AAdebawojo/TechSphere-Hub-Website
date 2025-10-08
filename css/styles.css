@@ -362,19 +362,19 @@
   }
   
   .copyright {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #d1d5db;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #d1d5db;
+  line-height: 1.8;
   }
 
   .copyright a {
-    color: #d1d5db; /* TechSphere blue tone */
-    text-decoration: none;
-    margin: 0 5px;
+  color: #d1d5db;
+  text-decoration: none;
   }
 
   .copyright a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
   }
   
   /* Responsive Adjustments */
