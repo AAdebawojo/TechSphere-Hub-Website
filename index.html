@@ -12,23 +12,32 @@
   
   <!-- Main content here -->
   <header class="header">
-    <img src="images/logo bg.png" alt="TechSphere Hub Academy Logo" class="logo">
-    
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  
-    <div class="header-btn">
-      <a href="https://forms.cloud.microsoft/e/NUFCftbrpM" class="btn-primary" target="_blank" rel="noopener noreferrer">Join a Cohort</a>
+    <div class="header-container">
+      <img src="images/logo bg.png" alt="TechSphere Hub Academy Logo" class="logo">
+
+      <button class="menu-toggle" aria-label="Toggle menu">
+        ☰
+      </button>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-btn">
+        <a href="https://forms.cloud.microsoft/e/NUFCftbrpM"
+           class="btn-primary"
+           target="_blank"
+           rel="noopener noreferrer">Join a Cohort</a>
+      </div>
     </div>
   </header>
-  
+
   <section class="hero" id="home">
     <div class="hero-text">
       <h1>Empower Your Future in Tech</h1>
@@ -267,6 +276,15 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
   
 </body>
 </html>
