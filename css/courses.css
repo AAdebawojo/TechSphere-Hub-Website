@@ -320,7 +320,7 @@ text-decoration: underline;
 }
 
 /* =========================
-   ✅ Mobile Responsive Header & Footer
+   ✅ Mobile Responsive Header & Footer (Match main site)
    ========================= */
 @media (max-width: 768px) {
   /* ----- HEADER ----- */
@@ -355,48 +355,47 @@ text-decoration: underline;
     font-size: 0.9rem;
     padding: 8px 16px;
     border-radius: 6px;
+    background: #2f6690;
+    color: #fff;
   }
 
-  /* ----- HERO SECTION ----- */
-  .hero {
-    flex-direction: column-reverse;
+  .btn-primary:hover {
+    background: #3a7ca5;
+  }
+
+  /* ----- HERO / GENERAL BODY LAYOUT ----- */
+  .container,
+  section,
+  .about-section,
+  .courses,
+  .course-detail-card {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: center;
-    padding: 40px 5%;
   }
 
-  .hero-text {
-    padding: 0;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
-
-  .hero-buttons {
+  .about-section {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  /* ----- ABOUT, COURSES, TESTIMONIALS GRIDS ----- */
-  .courses-grid, .why-grid, .testimonials-grid, .footer-container {
-    grid-template-columns: 1fr;
-  }
-
-  .about-container {
-    flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 
   .about-image img {
     margin: 0 auto;
   }
 
+  .section-title,
+  .section-subtitle,
+  .about-text h2,
+  .about-text h3 {
+    text-align: center;
+  }
+
   /* ----- FOOTER ----- */
   .footer {
+    background: #1f4b75; /* Match styles.css color */
+    color: #fff;
     padding: 3rem 1rem 2rem;
     text-align: center;
   }
@@ -468,12 +467,8 @@ text-decoration: underline;
     padding: 7px 14px;
   }
 
-  .hero-text h1 {
+  .section-title {
     font-size: 1.8rem;
-  }
-
-  .hero-text p {
-    font-size: 0.95rem;
   }
 
   .footer {
