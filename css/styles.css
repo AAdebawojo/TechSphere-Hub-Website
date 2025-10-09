@@ -21,10 +21,11 @@
   }
   
   .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
   }
   
   .section-title {
@@ -396,148 +397,164 @@
     color: var(--text-color);
   }
 
-  /* --- Refined Mobile Header Layout --- */
-  @media (max-width: 768px) {
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-  /* Hide full navigation menu on mobile */
-    nav ul {
-      display: none;
-    }
-
-  /* Adjust logo size for smaller screens */
-    .logo {
-      width: 130px;
-      margin: 0;
-    }
-
-  /* Make the “Join a Cohort” button visually balanced */
-    .header-btn {
-      margin: 0;
-    }
-
-    .btn-primary {
-      font-size: 0.9rem;
-      padding: 8px 16px;
-      border-radius: 6px;
-    }
+/* =========================
+   ✅ Mobile Responsive Header & Footer
+   ========================= */
+@media (max-width: 768px) {
+  /* ----- HEADER ----- */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .header {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    nav ul {
-      display: none;
-    }
-  
-    .btn-primary {
-      margin-top: 10px;
-      margin-right: 0;
-    }
-  
-    .hero {
-      flex-direction: column-reverse;
-      text-align: center;
-      padding: 40px 5%;
-    }
-  
-    .hero-text {
-      padding: 0;
-    }
-  
-    .hero-text h1 {
-      font-size: 2.2rem;
-    }
-  
-    .hero-text p {
-      font-size: 1rem;
-    }
-  
-    .hero-buttons {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .courses-grid, .why-grid, .testimonials-grid, .footer-container {
-      grid-template-columns: 1fr;
-    }
-  
-    .about-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-text {
-      padding: 0 10px;
-    }
-  
-    .about-image img {
-      margin: 0 auto;
-    }
-  
-    .course-content h3, .why-content h4, .testimonial h4 {
-      font-size: 1.1rem;
-    }
-  
-    .course-content p, .why-content p, .testimonial p {
-      font-size: 0.9rem;
-    }
-  
-    .footer-left, .footer-center, .footer-right {
-      text-align: center;
-    }
-  
-    .footer-links, .social-links {
-      align-items: center;
-    }
-  
-    .social-links a {
-      justify-content: center;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .hero-text h1 {
-      font-size: 1.8rem;
-    }
-  
-    .hero-text p {
-      font-size: 0.95rem;
-    }
-  
-    .btn-primary, .btn-secondary {
-      padding: 8px 16px;
-      font-size: 0.9rem;
-    }
+  /* Hide navigation menu on mobile */
+  nav ul {
+    display: none;
   }
 
-  /* Responsive Header Fix */
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: center;
-      padding: 15px 0;
-    }
-
-    .logo {
-      margin-bottom: 10px;
-    }
-  
-    .btn-primary {
-      margin: 0;
-    }
+  /* Logo and button neatly on one line */
+  .logo {
+    width: 130px;
+    margin: 0;
   }
+
+  .header-btn {
+    margin: 0;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+  }
+
+  /* ----- HERO SECTION ----- */
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .hero-text {
+    padding: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* ----- ABOUT, COURSES, TESTIMONIALS GRIDS ----- */
+  .courses-grid, .why-grid, .testimonials-grid, .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    margin: 0 auto;
+  }
+
+  /* ----- FOOTER ----- */
+  .footer {
+    padding: 3rem 1rem 2rem;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-links,
+  .social-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-links li,
+  .social-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-links a,
+  .social-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: inline-block;
+  }
+
+  .footer-links a:hover,
+  .social-links a:hover {
+    color: #fff;
+  }
+
+  /* Center “Follow Us” icons horizontally */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .copyright {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .copyright a {
+    color: #d1d5db;
+    text-decoration: none;
+  }
+
+  .copyright a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* ----- Small Devices (Phones <480px) ----- */
+@media (max-width: 480px) {
+  .logo {
+    width: 110px;
+  }
+
+  .btn-primary {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .footer {
+    padding: 2.5rem 1rem 1.5rem;
+  }
+}

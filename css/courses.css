@@ -14,9 +14,11 @@ body {
 
 /* Container */
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
 }
 
 /* Header */
