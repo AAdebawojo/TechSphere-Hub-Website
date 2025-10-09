@@ -608,13 +608,3 @@
     margin: 0 auto;
   }
 }
-
-  @media (max-width: 768px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;     /* Centers content horizontally */
-    text-align: center;      /* Centers text content */
-    margin: 0 auto;
-  }
-}
