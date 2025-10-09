@@ -21,10 +21,11 @@
   }
   
   .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
   }
   
   .section-title {
@@ -555,5 +556,56 @@
 
   .footer {
     padding: 2.5rem 1rem 1.5rem;
+  }
+}
+
+/* =========================
+   ✅ Center Body Content on Mobile
+   ========================= */
+@media (max-width: 768px) {
+  /* Make sure all containers are centered */
+  .container,
+  section,
+  .hero,
+  .about,
+  .courses,
+  .testimonials,
+  .why-grid {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Ensure all text sections align properly */
+  .section-title,
+  .section-subtitle,
+  .hero-text,
+  .about-text {
+    text-align: center;
+  }
+
+  /* Fix spacing for grids and cards */
+  .courses-grid,
+  .why-grid,
+  .testimonials-grid {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .course-card,
+  .why-card,
+  .testimonial {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  /* Ensure images center within sections */
+  .hero-image img,
+  .about-image img {
+    display: block;
+    margin: 0 auto;
   }
 }
