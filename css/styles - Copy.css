@@ -21,11 +21,10 @@
   }
   
   .container {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.25rem;
-    box-sizing: border-box;
+    padding: 0 1rem;
   }
   
   .section-title {
@@ -606,6 +605,16 @@
   .hero-image img,
   .about-image img {
     display: block;
+    margin: 0 auto;
+  }
+}
+
+  @media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* Centers content horizontally */
+    text-align: center;      /* Centers text content */
     margin: 0 auto;
   }
 }
