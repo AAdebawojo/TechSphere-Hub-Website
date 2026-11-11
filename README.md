@@ -44,19 +44,6 @@ The structure below shows the **published repository root**. Copy the **contents
 |-- images/                # Logo, programme and section images
 |   |-- blog/              # Article cover images
 ```
-
-The downloadable redesign package also contains **local support folders**, separate from the website:
-
-| Folder or file | Purpose |
-|---|---|
-| `tools/blog-editor.html` | Local editor for writing and updating articles |
-| `tools/techsphere-blog-backup.json` | Editable backup of the ten supplied articles |
-| `articles-source/` | Formatted article text in Markdown |
-| `original-backup/` | Original website archive and supplied blog assets |
-| `START-HERE.html` | Local guide to reviewing the website and editor |
-
-Keep these support files on your computer. **Upload only the website contents and this README to the public website repository.**
-
 ---
 
 ## 📄 Pages Overview
